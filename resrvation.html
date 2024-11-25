@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Reservation</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/6f798d99ef4b1e488532d63969d7a51f.jpg) rgba(0, 0, 0, 0.747);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    width: 420px;
+    background: rgba(252, 114, 15, 0.700) ;
+    box-shadow: 0 0 70px rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    color: rgba(0, 238, 255, 0.467);
+}
+
+.input-box input {
+    width: 100%;
+     height: 100%;
+     background: transparent;
+     border: none;
+     outline: none;
+     border: 2px solid white;
+     border-radius: 40px;
+     font-size: 16px;
+     color: #fff;
+     padding: 20px 45px 20px 20px;
+     font-weight: bold;
+}
+
+.input-box input::placeholder{
+     color: white;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    color: white;
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+
+}
+
+.wrapper .btn {
+    width: 100% ;
+    height:45px ;
+    background: rgba(255, 217, 0, 0.873);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(255, 119, 0);
+    cursor: pointer;
+    font-size: 16px;
+    color:black;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5;
+    text-align: center;
+    margin: 20px 0 15px ;
+    color: #fff;
+}
+
+.register-link p a {
+    color: rgba(255, 213, 0, 0.662);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="restaurant.html">
+
+            <h1>Reservation</h1>
+            <div class="input-box">
+            <input type="text" placeholder="Emer Mbiemer" required>
+            <i class='bx bxs-user'></i>
+        </div>
+            
+        <div class="input-box">
+                <input type="number" placeholder="Nr.Telefoni"
+                required>
+                <i class='bx bx-phone-call'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="date" placeholder="Data e Rezervimit"
+                required>
+                <i class='bx bxs-calendar'></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox">Ruaj Te Dhenat</label>
+               </div>
+        
+           <button type="submit"  class="btn"> Konfirmo</button>
+           <div class="register-link">
+            <p>Ktheu Mbrapa <a href="restaurant.html">Home</a></p>
+           </div>
+        </form>
+    </div>
+</body>
+</html>
